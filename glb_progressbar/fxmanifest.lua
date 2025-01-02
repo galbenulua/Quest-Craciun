@@ -1,0 +1,16 @@
+fx_version 'adamant'
+game 'gta5'
+
+ui_page 'html/ui.html'
+
+client_scripts {
+    "client.lua"
+}
+
+files {
+    "html/style/style.css",
+    "html/js/java.js",
+    "html/ui.html"
+}
+
+export 'Start'

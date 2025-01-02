@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Sacramento&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; 
+}
+
+#container {
+    background-image: url('christmasquest.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 70%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    visibility: hidden; 
+}
+
+.titlu {
+    font-family: 'Sacramento', cursive; /* Font festiv */
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Efect de strălucire */
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.portocale-container {
+    margin-bottom: 20px;
+}
+
+#portocale {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #f1f1f1;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.butone-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.butone1, .butone2, .butone3 {
+    background-color: #ff1900;
+    color: white;
+    font-size: 1.3rem;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.butone1:hover, .butone2:hover, .butone3:hover {
+    transform: translateY(-5px);
+    background-color: #ac1100;
+}
+
+.descriere {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #f1f1f1;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+body.visible {
+    visibility: visible;
+}
+
+#container.visible {
+    visibility: visible;
+}
